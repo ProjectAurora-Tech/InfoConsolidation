@@ -1,4 +1,3 @@
-//import Result from "./components/Result";
 import "./ResourceRecommender.css";
 
 import React, { Component } from "react";
@@ -6,7 +5,7 @@ import React, { Component } from "react";
 import Quiz from "./components/Quiz";
 import QuizResultCard from "./components/QuizResultCard";
 import Resources from "../../static/Resources";
-import Tags from "./components/QuizTags"; // copy from static/Tags
+import Tags from "../../static/Tags";
 import _ from "underscore";
 import quizQuestions from "./api/quizQuestions";
 
@@ -272,10 +271,6 @@ class ResourceRecommender extends Component {
       </div>
     );
   }
-  // COMPLETE: update Quiz Component -- ok
-  // COMPLETE: create Crisis response component --ok
-  // TO-DO: render different header if we have CRISIS RESPONSE?
-  //example: {this.state.answerLists.includes("suicidal")? <SomethingElse> : <Default Header>}
 }
 
 export default ResourceRecommender;

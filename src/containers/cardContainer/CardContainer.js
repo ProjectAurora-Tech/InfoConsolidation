@@ -1,4 +1,4 @@
-import "containers/cardContainer/CardContainer.css";
+import "./CardContainer.css";
 
 import { Card, Header, Segment } from "semantic-ui-react";
 

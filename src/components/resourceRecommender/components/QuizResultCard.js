@@ -1,7 +1,9 @@
 import { Button, Card, Header, Icon, Segment } from "semantic-ui-react";
 
 import MediaQuery from "react-responsive";
-import QuizInfoCard from "./QuizInfoCard";
+
+import InfoCard from "components/infoCard/InfoCard";
+
 import React from "react";
 import _ from "underscore";
 
@@ -79,7 +81,7 @@ class CardContainer extends React.Component {
           <Segment basic>
             <Card.Group style={{ margin: "-.875em 1em 0.5em 6em" }}>
               {_.map(resources, (resource, index) => (
-                <QuizInfoCard key={index.toString()} {...resource} /> // spread the props
+                <InfoCard key={index.toString()} {...resource} /> // spread the props
               ))}
             </Card.Group>
           </Segment>
@@ -88,7 +90,7 @@ class CardContainer extends React.Component {
           <Segment basic>
             <Card.Group>
               {_.map(resources, (resource, index) => (
-                <QuizInfoCard key={index.toString()} {...resource} />
+                <InfoCard key={index.toString()} {...resource} />
               ))}
             </Card.Group>
           </Segment>

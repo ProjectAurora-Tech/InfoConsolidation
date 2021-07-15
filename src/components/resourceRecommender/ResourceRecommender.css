@@ -44,12 +44,6 @@ code {
   list-style: none;
 }
 
-/* QuestionCount Component */
-.questionCount {
-  padding: 1.5rem 2.5rem 0;
-  font-size: 14px;
-}
-
 /* Question Component */
 .question {
   margin: 0;
